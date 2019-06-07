@@ -14,7 +14,12 @@
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-
+  <!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.2/css/mdb.min.css" rel="stylesheet">
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
 
@@ -24,7 +29,8 @@
 
   <!-- Page Wrapper -->
   <div id="wrapper">
-<!-- Sidebar -->
+
+    <!-- Sidebar -->
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
@@ -149,7 +155,6 @@
 
     </ul>
     <!-- End of Sidebar -->
-
     <!-- Content Wrapper -->
     <div id="content-wrapper" class="d-flex flex-column">
 
@@ -342,15 +347,16 @@
 
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Tax Payer</h1> 
+            <h1 class="h3 mb-0 text-gray-800">Support</h1> 
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item"><a href="#">Payee Agent</a></li>
+                <li class="breadcrumb-item"><a href="#">New Employee</a></li>
                 
               </ol>
             </nav>
           </div>
+
 
           <!-- Content Row -->
           <div class="row">
@@ -362,37 +368,89 @@
           <div class="card shadow mb-4">
             <div class="card-header py-3">
               <div class="row">
-                <div class="col-md-4">
-                  <h6 class="m-0 font-weight-bold text-primary">Your Payee Agents</h6>
-                </div>
                 <div class="col-md-8">
-                  <a href="#" class="btn btn-outline-primary"  data-toggle="modal" data-target="#payeeModal" style="float: right; margin-right: 0.5em;">Add New</a>
-                  
-                  <a href="#" class="btn btn-outline-primary" style="float: right; margin-right: 0.5em;">Add Existing Payee Agent</a>
+                  <h6 class="m-0 font-weight-bold text-primary">New Employee/Tax Payer</h6>
                 </div>
               </div>
+              
             </div>
             <div class="card-body">
-              <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                  <thead>
-                    <tr>
-                      <th>S/no</th>
-                      <th>RC Number</th>
-                      <th>Payee Agent</th>
-                      <th>BIRSTIN</th>
-                      <th>Phone</th>
-                      <th>Email</th>
-                      <th>Address</th>
-                      <th>Action</th>
-                    </tr>
-                  </thead>
-                  
-                  <tbody>
-                    
-                  </tbody>
-                </table>
-              </div>
+               <form class="user">
+                <div class="form-group row">
+                  <div class="col-sm-6 mb-3 mb-sm-0">
+                    <label>Surname</label>
+                    <input type="text" class="form-control" id="Surname">
+                  </div>
+                  <div class="col-sm-6 mb-3 mb-sm-0">
+                    <label>First Name</label>
+                    <input type="text" class="form-control" id="First name">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-6 mb-3 mb-sm-0">
+                    <label>Other Name</label>
+                    <input type="text" class="form-control" id="Other name">
+                  </div>
+                  <div class="col-sm-6 mb-3 mb-sm-0">
+                    <label>Date Of Birth</label>
+                    <input type="date" class="form-control" id="Other name">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-6">
+                    <label>Sex</label>
+                    <select class="form-control" id="priority">
+                      <option>Male</option>
+                      <option>Female</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-6">
+                    <label>Nationality</label>
+                    <select class="form-control" id="priority">
+                      <option>Nigeria</option>
+                      <option>Norway</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-6 mb-3 mb-sm-0">
+                    <label>Email</label>
+                    <input type="email" class="form-control" id="email">
+                  </div>
+                  <div class="col-sm-6 mb-3 mb-sm-0">
+                    <label>Phone Number</label>
+                    <input type="text" class="form-control" id="Phone">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-6">
+                    <label>Employee Type</label>
+                    <select class="form-control" id="employeeType">
+                      <option>Expatriate</option>
+                      <option>Local</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-6 mb-3 mb-sm-0">
+                    <label>Staff ID</label>
+                    <input type="text" class="form-control" id="Phone">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-6 mb-3 mb-sm-0">
+                    <label>Annual Pension</label>
+                    <input type="text" class="form-control" id="annualPension">
+                  </div>
+                  <div class="col-sm-6 mb-3 mb-sm-0">
+                    <label>NHS</label>
+                    <input type="text" class="form-control" id="nhs">
+                  </div>
+                </div>
+                <a href="login.html" class="btn btn-primary btn-user btn-block">
+                  Submit
+                </a>
+                <hr>
+                
+              </form>
             </div>
           </div>
 
@@ -449,66 +507,6 @@
     </div>
   </div>
 
-  <!-- new payee modal-->
-  <div class="modal fade" id="payeeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">New Payee Agent</h5>
-          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">×</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <form class="user">
-                  <div class="col-sm-12 mb-6 mb-sm-0">
-                    <label>Company Name</label>
-                    <input type="text" class="form-control" id="companyName">
-                  </div>
-                <div class="form-group row">
-                  <div class="col-sm-6 mb-3 mb-sm-0">
-                    <label>RC Number</label>
-                    <input type="text" class="form-control" id="rcNumber">
-                  </div>
-                  <div class="col-sm-6 mb-3 mb-sm-0">
-                    <label>Year Of Incorporation</label>
-                    <input type="date" class="form-control" id="year">
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <div class="col-sm-6 mb-3 mb-sm-0">
-                    <label>Company Email</label>
-                    <input type="email" class="form-control" id="companyEmail">
-                  </div>
-                  <div class="col-sm-6 mb-3 mb-sm-0">
-                    <label>Company Phone</label>
-                    <input type="date" class="form-control" id="Other name">
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <div class="col-sm-6 mb-3 mb-sm-0">
-                    <label>Password</label>
-                    <input type="password" class="form-control" id="password">
-                  </div>
-                  <div class="col-sm-6 mb-3 mb-sm-0">
-                    <label>Confirm Password</label>
-                    <input type="password" class="form-control" id="confirmPassword">
-                  </div>
-                </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <label>TIN</label>
-                    <input type="text" class="form-control" id="tin">
-                </div>
-            </form>
-        </div>
-        <div class="modal-footer">
-          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <a class="btn btn-primary" href="login.html">Logout</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <!-- Bootstrap core JavaScript-->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -518,14 +516,6 @@
 
   <!-- Custom scripts for all pages-->
   <script src="js/sb-admin-2.min.js"></script>
-
-  <!-- Page level plugins -->
-  <script src="vendor/chart.js/Chart.min.js"></script>
-
-  <!-- Page level custom scripts -->
-  <script src="js/demo/chart-area-demo.js"></script>
-  <script src="js/demo/chart-pie-demo.js"></script>
-
 </body>
 
 </html>

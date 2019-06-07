@@ -14,7 +14,12 @@
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-
+  <!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.2/css/mdb.min.css" rel="stylesheet">
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
 
@@ -25,7 +30,7 @@
   <!-- Page Wrapper -->
   <div id="wrapper">
 
-    <!-- Sidebar -->
+   <!-- Sidebar -->
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
@@ -33,27 +38,17 @@
         <div class="sidebar-brand-icon rotate-n-15">
           <i class="fas fa-laugh-wink"></i>
         </div>
-        <div class="sidebar-brand-text mx-3">Benue IRS</div>
+        <div class="sidebar-brand-text mx-3">BIRETAS </div>
       </a>
-
       <!-- Divider -->
       <hr class="sidebar-divider my-0">
-
-      <!-- Nav Item - Dashboard -->
+        <!-- Nav Item - Dashboard -->
       <li class="nav-item active">
         <a class="nav-link" href="index.html">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Dashboard</span></a>
+          <a href="home.html"><i class="fas fa-fw fa-tachometer-alt"></i><span style="color: #fff !important;">Dashboard</span></a>
       </li>
-
       <!-- Divider -->
       <hr class="sidebar-divider">
-
-      <!-- Heading -->
-      <div class="sidebar-heading">
-        Interface
-      </div>
-
       <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
@@ -62,10 +57,10 @@
         </a>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="#">Employees</h6>
-            <a class="collapse-item" href="#">Reguest</a>
-            <a class="collapse-item" href="#">Paye Agents</a>
-            <a class="collapse-item" href="#">Paye Agents Requests</a>
+            <a class="collapse-item" href="employee.html">Employees</h6>
+            <a class="collapse-item" href="requests.html">Request</a>
+            <a class="collapse-item" href="payee_agent.html">Payee Agents</a>
+            <a class="collapse-item" href="payee_agent_request.html">Payee Agents Requests</a>
           </div>
         </div>
       </li>
@@ -78,9 +73,9 @@
         </a>
         <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="#">File Annual Returns</h6>
-            <a class="collapse-item" href="#">Track Annual Returns</a>
-            <a class="collapse-item" href="#">Application For Relief</a>
+            <a class="collapse-item" href="annual_returns.html">File Annual Returns</h6>
+            <a class="collapse-item" href="track_annual_returns.html">Track Annual Returns</a>
+            <a class="collapse-item" href="appl_for_relief.html">Application For Relief</a>
           </div>
         </div>
       </li>
@@ -92,8 +87,8 @@
         </a>
         <div id="collapsePayments" class="collapse" aria-labelledby="headingPayments" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="#">Make Payments</h6>
-            <a class="collapse-item" href="#">Payment History</a>
+            <a class="collapse-item" href="payment.html">Make Payments</h6>
+            <a class="collapse-item" href="payment_history.html">Payment History</a>
           </div>
         </div>
       </li>
@@ -105,8 +100,8 @@
         </a>
         <div id="collapseTcc" class="collapse" aria-labelledby="headingTcc" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="#">TCC Requests</h6>
-            <a class="collapse-item" href="#">Track TCC Requests</a>
+            <a class="collapse-item" href="tcc_request.html">TCC Requests</h6>
+            <a class="collapse-item" href="track_tcc_request.html">Track TCC Requests</a>
           </div>
         </div>
       </li>
@@ -118,9 +113,9 @@
         </a>
         <div id="collapseWithholding" class="collapse" aria-labelledby="headingWithholding" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="#">Vendors</h6>
-            <a class="collapse-item" href="#">Withholding Tax</a>
-            <a class="collapse-item" href="#">Credit Note Requests</h6>
+            <!--<a class="collapse-item" href="#">Vendors</h6>-->
+            <a class="collapse-item" href="withholding_tax.html">Withholding Tax</a>
+            <a class="collapse-item" href="credit_note_request.html">Credit Note Requests</h6>
           </div>
         </div>
       </li>
@@ -132,7 +127,20 @@
         </a>
         <div id="collapseTools" class="collapse" aria-labelledby="headingTools" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="#">Tax Calculator</h6>
+            <a class="collapse-item" href="calculator.html">Tax Calculator</h6>
+          </div>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseSupport" aria-expanded="true" aria-controls="collapseSupport">
+          <i class="fas fa-hands-helping"></i>
+          <span>Support</span>
+        </a>
+        <div id="collapseSupport" class="collapse" aria-labelledby="headingSupport" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <a class="collapse-item" href="issues.html">Issues</h6>
+            <a class="collapse-item" href="new_issue.html">New Issue</a>
           </div>
         </div>
       </li>
@@ -140,7 +148,7 @@
       <hr class="sidebar-divider">
 
       <!-- Heading -->
-      <
+      
       <div class="text-center d-none d-md-inline">
         <button class="rounded-circle border-0" id="sidebarToggle"></button>
       </div>
@@ -340,15 +348,16 @@
 
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Paye Agents</h1> 
+            <h1 class="h3 mb-0 text-gray-800">Support</h1> 
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item"><a href="#">Track TCC Request</a></li>
+                <li class="breadcrumb-item"><a href="#">Issues</a></li>
                 
               </ol>
             </nav>
           </div>
+
 
           <!-- Content Row -->
           <div class="row">
@@ -360,25 +369,45 @@
           <div class="card shadow mb-4">
             <div class="card-header py-3">
               <div class="row">
-                <div class="col-md-4">
-                  <h6 class="m-0 font-weight-bold text-primary">Track TCC Request</h6>
+                <div class="col-md-8">
+                  <h6 class="m-0 font-weight-bold text-primary">All issues</h6>
                 </div>
-                
+                <div class="col-md-4" >
+                  <a href="" class="btn btn-primary">Make A New Issue</a>
+                </div>
               </div>
+              
             </div>
             <div class="card-body">
               <div class="table-responsive">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                   <thead>
                     <tr>
-                      
+                      <th>Subject</th>
+                      <th>Status</th>
+                      <th>Raised By(Email)</th>
+
                     </tr>
                   </thead>
                   
                   <tbody>
-                    
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
                   </tbody>
+                  
                 </table>
+                <div class="row">
+                   <div class="col-md-4">
+                    <h6 class="m-0 font-weight-bold text-primary">Showing 0 to 0 of 0 entries</h6>
+                   </div>
+                   <div class="col-md-8">
+                    <a href="#" class="btn btn-outline-primary" style="float: right; margin-right: 0.5em;">Previous</a>
+                    <a href="#" class="btn btn-outline-primary" style="float: right; margin-right: 0.5em;">Next</a>
+                  </div>
+                 </div>
               </div>
             </div>
           </div>
@@ -445,14 +474,6 @@
 
   <!-- Custom scripts for all pages-->
   <script src="js/sb-admin-2.min.js"></script>
-
-  <!-- Page level plugins -->
-  <script src="vendor/chart.js/Chart.min.js"></script>
-
-  <!-- Page level custom scripts -->
-  <script src="js/demo/chart-area-demo.js"></script>
-  <script src="js/demo/chart-pie-demo.js"></script>
-
 </body>
 
 </html>

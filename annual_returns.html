@@ -31,6 +31,7 @@
   <div id="wrapper">
 
     <!-- Sidebar -->
+    <!-- Sidebar -->
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
@@ -38,27 +39,17 @@
         <div class="sidebar-brand-icon rotate-n-15">
           <i class="fas fa-laugh-wink"></i>
         </div>
-        <div class="sidebar-brand-text mx-3">Benue IRS</div>
+        <div class="sidebar-brand-text mx-3">BIRETAS </div>
       </a>
-
       <!-- Divider -->
       <hr class="sidebar-divider my-0">
-
-      <!-- Nav Item - Dashboard -->
+        <!-- Nav Item - Dashboard -->
       <li class="nav-item active">
         <a class="nav-link" href="index.html">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Dashboard</span></a>
+          <a href="home.html"><i class="fas fa-fw fa-tachometer-alt"></i><span style="color: #fff !important;">Dashboard</span></a>
       </li>
-
       <!-- Divider -->
       <hr class="sidebar-divider">
-
-      <!-- Heading -->
-      <div class="sidebar-heading">
-        Interface
-      </div>
-
       <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
@@ -67,10 +58,10 @@
         </a>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="#">Employees</h6>
-            <a class="collapse-item" href="#">Reguest</a>
-            <a class="collapse-item" href="#">Paye Agents</a>
-            <a class="collapse-item" href="#">Paye Agents Requests</a>
+            <a class="collapse-item" href="employee.html">Employees</h6>
+            <a class="collapse-item" href="requests.html">Request</a>
+            <a class="collapse-item" href="payee_agent.html">Payee Agents</a>
+            <a class="collapse-item" href="payee_agent_request.html">Payee Agents Requests</a>
           </div>
         </div>
       </li>
@@ -83,9 +74,9 @@
         </a>
         <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="#">File Annual Returns</h6>
-            <a class="collapse-item" href="#">Track Annual Returns</a>
-            <a class="collapse-item" href="#">Application For Relief</a>
+            <a class="collapse-item" href="annual_returns.html">File Annual Returns</h6>
+            <a class="collapse-item" href="track_annual_returns.html">Track Annual Returns</a>
+            <a class="collapse-item" href="appl_for_relief.html">Application For Relief</a>
           </div>
         </div>
       </li>
@@ -97,8 +88,8 @@
         </a>
         <div id="collapsePayments" class="collapse" aria-labelledby="headingPayments" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="#">Make Payments</h6>
-            <a class="collapse-item" href="#">Payment History</a>
+            <a class="collapse-item" href="payment.html">Make Payments</h6>
+            <a class="collapse-item" href="payment_history.html">Payment History</a>
           </div>
         </div>
       </li>
@@ -110,8 +101,8 @@
         </a>
         <div id="collapseTcc" class="collapse" aria-labelledby="headingTcc" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="#">TCC Requests</h6>
-            <a class="collapse-item" href="#">Track TCC Requests</a>
+            <a class="collapse-item" href="tcc_request.html">TCC Requests</h6>
+            <a class="collapse-item" href="track_tcc_request.html">Track TCC Requests</a>
           </div>
         </div>
       </li>
@@ -123,9 +114,9 @@
         </a>
         <div id="collapseWithholding" class="collapse" aria-labelledby="headingWithholding" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="#">Vendors</h6>
-            <a class="collapse-item" href="#">Withholding Tax</a>
-            <a class="collapse-item" href="#">Credit Note Requests</h6>
+            <!--<a class="collapse-item" href="#">Vendors</h6>-->
+            <a class="collapse-item" href="withholding_tax.html">Withholding Tax</a>
+            <a class="collapse-item" href="credit_note_request.html">Credit Note Requests</h6>
           </div>
         </div>
       </li>
@@ -137,7 +128,20 @@
         </a>
         <div id="collapseTools" class="collapse" aria-labelledby="headingTools" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="#">Tax Calculator</h6>
+            <a class="collapse-item" href="calculator.html">Tax Calculator</h6>
+          </div>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseSupport" aria-expanded="true" aria-controls="collapseSupport">
+          <i class="fas fa-hands-helping"></i>
+          <span>Support</span>
+        </a>
+        <div id="collapseSupport" class="collapse" aria-labelledby="headingSupport" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <a class="collapse-item" href="issues.html">Issues</h6>
+            <a class="collapse-item" href="new_issue.html">New Issue</a>
           </div>
         </div>
       </li>
@@ -145,12 +149,13 @@
       <hr class="sidebar-divider">
 
       <!-- Heading -->
-      <
+      
       <div class="text-center d-none d-md-inline">
         <button class="rounded-circle border-0" id="sidebarToggle"></button>
       </div>
 
     </ul>
+    <!-- End of Sidebar -->
     <!-- End of Sidebar -->
 
     <!-- Content Wrapper -->
@@ -349,7 +354,7 @@
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item"><a href="#">Payee Agent</a></li>
+                <li class="breadcrumb-item"><a href="#">Annual Returns</a></li>
                 
               </ol>
             </nav>
@@ -415,7 +420,7 @@
                   <h6 class="m-0 font-weight-bold text-primary">Annual Returns</h6>
                 </div>
                 <div class="col-md-8">
-                  <a href="#" class="btn btn-outline-primary" style="float: right; margin-right: 0.5em;">Add Director</a>
+                  <a href="#" class="btn btn-outline-primary" style="float: right; margin-right: 0.5em;" data-toggle="modal" data-target="#addDirectorModal">Add Director</a>
                 </div>
               </div>
             </div>
@@ -508,6 +513,92 @@
         <div class="modal-footer">
           <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
           <a class="btn btn-primary" href="login.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- addDirector Modal-->
+  <div class="modal fade" id="addDirectorModal" tabindex="-1" role="dialog" aria-labelledby="addDirectoreModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Add Director</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="user">
+                <div class="form-group row">
+                  <div class="col-sm-6 mb-3 mb-sm-0">
+                    <label>Director Surname</label>
+                    <input type="text" class="form-control" id="directorSurname">
+                  </div>
+                  <div class="col-sm-6 mb-3 mb-sm-0">
+                    <label>Director First Name</label>
+                    <input type="text" class="form-control" id="directorFirstName">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-6 mb-3 mb-sm-0">
+                    <label>Director'S Other Name</label>
+                    <input type="text" class="form-control" id="directorOtherName">
+                  </div>
+                  <div class="col-sm-6 mb-3 mb-sm-0">
+                    <label>Director's Email</label>
+                    <input type="email" class="form-control" id="directorEmail">
+                  </div>
+                </div>
+                <div class="col-sm-6 mb-3 mb-sm-0">
+                    <label>Tax Paid In 2016</label>
+                    <input type="number" class="form-control" id="tax2016">
+                </div>
+                <div class="col-sm-6 mb-3 mb-sm-0">
+                    <label>Tax Paid In 2017</label>
+                    <input type="number" class="form-control" id="tax2017">
+                </div>
+                <div class="col-sm-6 mb-3 mb-sm-0">
+                    <label>Tax Paid In 2018</label>
+                    <input type="number" class="form-control" id="tax2018">
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-6">
+                    <label>Director's Sex</label>
+                    <select class="form-control" id="directorSex">
+                      <option>Male</option>
+                      <option>Female</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-6">
+                    <label>Director's Marital Status</label>
+                    <select class="form-control" id="directorMaritalStatus">
+                      <option>Single</option>
+                      <option>Married</option>
+                      <option>Divorced</option>
+                      <option>Others</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-6 mb-3 mb-sm-0">
+                    <label>BIRSTIN</label>
+                    <input type="text" class="form-control" id="birsTin">
+                  </div>
+                  <div class="col-sm-6 mb-3 mb-sm-0">
+                    <label>Director's Address</label>
+                    <input type="email" class="form-control" id="directorAddress">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label">Upload evidence of tax paid(PDF)</label>
+                  <input type="file" class="form-control-file" id="taxEvidence">
+                </div>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+          <a class="btn btn-primary" href="login.html">Submit</a>
         </div>
       </div>
     </div>

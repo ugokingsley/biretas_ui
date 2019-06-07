@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>SB Admin 2 - Blank</title>
+  <title>BIRETAS - Welcome To Benue Internal Revenue Service Enterprise Tax Administrative System</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -24,8 +24,7 @@
 
   <!-- Page Wrapper -->
   <div id="wrapper">
-
-    <!-- Sidebar -->
+<!-- Sidebar -->
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
@@ -33,38 +32,29 @@
         <div class="sidebar-brand-icon rotate-n-15">
           <i class="fas fa-laugh-wink"></i>
         </div>
-        <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+        <div class="sidebar-brand-text mx-3">BIRETAS </div>
       </a>
-
       <!-- Divider -->
       <hr class="sidebar-divider my-0">
-
-      <!-- Nav Item - Dashboard -->
-      <li class="nav-item">
+        <!-- Nav Item - Dashboard -->
+      <li class="nav-item active">
         <a class="nav-link" href="index.html">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Dashboard</span></a>
+          <a href="home.html"><i class="fas fa-fw fa-tachometer-alt"></i><span style="color: #fff !important;">Dashboard</span></a>
       </li>
-
       <!-- Divider -->
       <hr class="sidebar-divider">
-
-      <!-- Heading -->
-      <div class="sidebar-heading">
-        Interface
-      </div>
-
       <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-          <i class="fas fa-fw fa-cog"></i>
-          <span>Components</span>
+          <i class="fas fa-fw fa-users"></i>
+          <span>PAYE</span>
         </a>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Custom Components:</h6>
-            <a class="collapse-item" href="buttons.html">Buttons</a>
-            <a class="collapse-item" href="cards.html">Cards</a>
+            <a class="collapse-item" href="employee.html">Employees</h6>
+            <a class="collapse-item" href="requests.html">Request</a>
+            <a class="collapse-item" href="payee_agent.html">Payee Agents</a>
+            <a class="collapse-item" href="payee_agent_request.html">Payee Agents Requests</a>
           </div>
         </div>
       </li>
@@ -72,66 +62,87 @@
       <!-- Nav Item - Utilities Collapse Menu -->
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
-          <i class="fas fa-fw fa-wrench"></i>
-          <span>Utilities</span>
+          <i class="fas fa-fw fa-calendar"></i>
+          <span>Annual Returns</span>
         </a>
         <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Custom Utilities:</h6>
-            <a class="collapse-item" href="utilities-color.html">Colors</a>
-            <a class="collapse-item" href="utilities-border.html">Borders</a>
-            <a class="collapse-item" href="utilities-animation.html">Animations</a>
-            <a class="collapse-item" href="utilities-other.html">Other</a>
+            <a class="collapse-item" href="annual_returns.html">File Annual Returns</h6>
+            <a class="collapse-item" href="track_annual_returns.html">Track Annual Returns</a>
+            <a class="collapse-item" href="appl_for_relief.html">Application For Relief</a>
           </div>
         </div>
       </li>
 
+       <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePayments" aria-expanded="true" aria-controls="collapsePayments">
+          <i class="fas fa-fw fa-wallet"></i>
+          <span>Payments</span>
+        </a>
+        <div id="collapsePayments" class="collapse" aria-labelledby="headingPayments" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <a class="collapse-item" href="payment.html">Make Payments</h6>
+            <a class="collapse-item" href="payment_history.html">Payment History</a>
+          </div>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTcc" aria-expanded="true" aria-controls="collapseTcc">
+          <i class="fas fa-fw fa-question"></i>
+          <span>TCC</span>
+        </a>
+        <div id="collapseTcc" class="collapse" aria-labelledby="headingTcc" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <a class="collapse-item" href="tcc_request.html">TCC Requests</h6>
+            <a class="collapse-item" href="track_tcc_request.html">Track TCC Requests</a>
+          </div>
+        </div>
+      </li>
+
+       <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseWithholding" aria-expanded="true" aria-controls="collapseWithholding">
+          <i class="fas fa-fw fa-coins"></i>
+          <span>Withholding Tax</span>
+        </a>
+        <div id="collapseWithholding" class="collapse" aria-labelledby="headingWithholding" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <!--<a class="collapse-item" href="#">Vendors</h6>-->
+            <a class="collapse-item" href="withholding_tax.html">Withholding Tax</a>
+            <a class="collapse-item" href="credit_note_request.html">Credit Note Requests</h6>
+          </div>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTools" aria-expanded="true" aria-controls="collapseTools">
+          <i class="fas fa-fw fa-cogs"></i>
+          <span>Tools</span>
+        </a>
+        <div id="collapseTools" class="collapse" aria-labelledby="headingTools" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <a class="collapse-item" href="calculator.html">Tax Calculator</h6>
+          </div>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseSupport" aria-expanded="true" aria-controls="collapseSupport">
+          <i class="fas fa-hands-helping"></i>
+          <span>Support</span>
+        </a>
+        <div id="collapseSupport" class="collapse" aria-labelledby="headingSupport" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <a class="collapse-item" href="issues.html">Issues</h6>
+            <a class="collapse-item" href="new_issue.html">New Issue</a>
+          </div>
+        </div>
+      </li>
       <!-- Divider -->
       <hr class="sidebar-divider">
 
       <!-- Heading -->
-      <div class="sidebar-heading">
-        Addons
-      </div>
-
-      <!-- Nav Item - Pages Collapse Menu -->
-      <li class="nav-item active">
-        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
-          <i class="fas fa-fw fa-folder"></i>
-          <span>Pages</span>
-        </a>
-        <div id="collapsePages" class="collapse show" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Login Screens:</h6>
-            <a class="collapse-item" href="login.html">Login</a>
-            <a class="collapse-item" href="register.html">Register</a>
-            <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
-            <div class="collapse-divider"></div>
-            <h6 class="collapse-header">Other Pages:</h6>
-            <a class="collapse-item" href="404.html">404 Page</a>
-            <a class="collapse-item active" href="blank.html">Blank Page</a>
-          </div>
-        </div>
-      </li>
-
-      <!-- Nav Item - Charts -->
-      <li class="nav-item">
-        <a class="nav-link" href="charts.html">
-          <i class="fas fa-fw fa-chart-area"></i>
-          <span>Charts</span></a>
-      </li>
-
-      <!-- Nav Item - Tables -->
-      <li class="nav-item">
-        <a class="nav-link" href="tables.html">
-          <i class="fas fa-fw fa-table"></i>
-          <span>Tables</span></a>
-      </li>
-
-      <!-- Divider -->
-      <hr class="sidebar-divider d-none d-md-block">
-
-      <!-- Sidebar Toggler (Sidebar) -->
+      
       <div class="text-center d-none d-md-inline">
         <button class="rounded-circle border-0" id="sidebarToggle"></button>
       </div>
@@ -329,10 +340,67 @@
         <!-- End of Topbar -->
 
         <!-- Begin Page Content -->
-        <div class="container-fluid">
+        <div class="container-fluid"><br>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="card mb-2">
+                <div class="card-header" style="background: #fff;text-align: center;">
+                  Tax Calculator
+                </div>
+                <div class="card-body">
+                  <form>
+                    <div class="form-group">
+                      <label>Gross Income</label>
+                      <input type="number" class="form-control" id="income" placeholder="Gross Income">
+                    </div>
+                    <div class="form-group">
+                      <label>Personal Contribution</label>
+                      <input type="number" class="form-control" id="personalContribution" placeholder="Personal Contribution">
+                    </div>
+                    <div class="form-group">
+                      <label>NHF Contribution</label>
+                      <input type="number" class="form-control" id="nhfContribution" placeholder="NHF Contribution">
+                    </div>
+                    <div class="form-group">
+                      <label>NHIS Contribution</label>
+                      <input type="number" class="form-control" id="nhisContribution" placeholder="NHIS Contribution">
+                    </div>
+                    <div class="form-group">
+                      <label>Life Assurance Payments</label>
+                      <input type="number" class="form-control" id="assurance" placeholder="Life Assurance Payments">
+                    </div>
+                    <div class="form-group">
+                      <input type="submit" href="#" class="btn btn-success" value="Calculate">
+                      <input type="submit" href="#" class="btn btn-success" value="Reset">
+                    </div>
+                  </form><br><br>
+                </div><br><br><br>
 
-          <!-- Page Heading -->
-          <h1 class="h3 mb-4 text-gray-800">Blank Page</h1>
+              </div>
+            </div>
+            
+            <div class="col-lg-6">
+              <div class="card mb-4">
+                <div class="card-header" style="background: #fff; text-align: center;">
+                  Tax Calculator Results
+                </div><br><br><br><br>
+                <div class="card-body">
+                  Gross Income: <br>
+                  Total Tax Relief Items:  <br>
+                  Consolidated Relief Allowance: <br>
+                  Total Non-Taxable Income:  <br>
+                  Total Taxable Income:  <br>
+                  Total Tax: <br>
+                </div><br><br><br><br><br>
+              </div>
+            </div>
+          </div>
+
+          <!-- Content Row -->
+          <div class="row">
+
+
+          </div>
 
         </div>
         <!-- /.container-fluid -->
@@ -344,7 +412,7 @@
       <footer class="sticky-footer bg-white">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
-            <span>Copyright &copy; Your Website 2019</span>
+            <span>Copyright &copy; Benue IRS 2019</span>
           </div>
         </div>
       </footer>
