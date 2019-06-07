@@ -337,64 +337,72 @@
           </ul>
 
         </nav>
-        <!-- End of Topbar -->
 
-        <!-- Begin Page Content -->
-        <div class="container-fluid"><br>
+        <div class="container-fluid">
+
+          <!-- Page Heading -->
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Tax Payer</h1> 
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Employee Assessment</a></li>
+                
+              </ol>
+            </nav>
+          </div>
+
+          <!-- Content Row -->
           <div class="row">
-            <div class="col-lg-6">
-              <div class="card mb-2">
-                <div class="card-header" style="background: #fff;text-align: center;">
-                  Tax Calculator
-                </div>
-                <div class="card-body">
-                  <form>
-                    <div class="form-group">
-                      <label>Gross Income</label>
-                      <input type="number" class="form-control" id="income" placeholder="Gross Income">
-                    </div>
-                    <div class="form-group">
-                      <label>Personal Contribution</label>
-                      <input type="number" class="form-control" id="personalContribution" placeholder="Personal Contribution">
-                    </div>
-                    <div class="form-group">
-                      <label>NHF Contribution</label>
-                      <input type="number" class="form-control" id="nhfContribution" placeholder="NHF Contribution">
-                    </div>
-                    <div class="form-group">
-                      <label>NHIS Contribution</label>
-                      <input type="number" class="form-control" id="nhisContribution" placeholder="NHIS Contribution">
-                    </div>
-                    <div class="form-group">
-                      <label>Life Assurance Payments</label>
-                      <input type="number" class="form-control" id="assurance" placeholder="Life Assurance Payments">
-                    </div>
-                    <div class="form-group">
-                      <input type="submit" href="#" class="btn btn-success" value="Calculate">
-                      <input type="submit" href="#" class="btn btn-success" value="Reset">
-                    </div>
-                  </form><br><br>
-                </div><br><br><br>
 
+          </div>
+
+          <!-- Content Row -->
+
+          <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <div class="row">
+                <div class="col-md-4">
+                  <h6 class="m-0 font-weight-bold text-primary">Your Payee Assessments</h6>
+                </div>
+                <div class="col-md-8">
+                  <a href="#" class="btn btn-outline-primary"  data-toggle="modal" data-target="#payeeModal" style="float: right; margin-right: 0.5em;">Add New</a>
+                </div>
               </div>
             </div>
-            
-            <div class="col-lg-6">
-              <div class="card mb-4">
-                <div class="card-header" style="background: #fff; text-align: center;">
-                  Tax Calculator Results
-                </div><br><br><br><br>
-                <div class="card-body">
-                  Gross Income: <br>
-                  Total Tax Relief Items:  <br>
-                  Consolidated Relief Allowance: <br>
-                  Total Non-Taxable Income:  <br>
-                  Total Taxable Income:  <br>
-                  Total Tax: <br>
-                </div><br><br><br><br><br>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>S/no</th>
+                      <th>Surname</th>
+                      <th>First Name/th>
+                      <th>Basic Salary</th>
+                      <th>Tax</th>
+                      <th>Allowances</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Philips</td>
+                      <td>Segun</td>
+                      <td>45000</td>
+                      <td><a href="#">Compute Tax Payable</a></td>
+                      <td>75000</td>
+                      <td>
+                        <a href="#" class="btn btn-outline-primary"  data-toggle="modal" data-target="#verifyModal" style="float: right; margin-right: 0.5em;">Verify</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
+              <a href="#" class="btn btn-outline-primary">Raise Tax Invoice</a>
             </div>
           </div>
+
 
           <!-- Content Row -->
           <div class="row">
@@ -448,6 +456,58 @@
     </div>
   </div>
 
+  <!-- new payee modal-->
+  <div class="modal fade" id="payeeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">New Payee Agent</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="user">
+                <div class="col-sm-8 mb-6 mb-sm-0">
+                  <label>Company TIN</label>
+                  <input type="text" class="form-control" id="tin" placeholder="Enter Company TIN">
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+          <a class="btn btn-primary" href="employee_assessment.html">Add Payee Details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--verify modal-->
+  <div class="modal fade" id="verifyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"></h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="user">
+                <div class="col-sm-8 mb-6 mb-sm-0">
+                  <p>
+                    Successful !!!
+                  </p>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Bootstrap core JavaScript-->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -457,6 +517,13 @@
 
   <!-- Custom scripts for all pages-->
   <script src="js/sb-admin-2.min.js"></script>
+
+  <!-- Page level plugins -->
+  <script src="vendor/chart.js/Chart.min.js"></script>
+
+  <!-- Page level custom scripts -->
+  <script src="js/demo/chart-area-demo.js"></script>
+  <script src="js/demo/chart-pie-demo.js"></script>
 
 </body>
 

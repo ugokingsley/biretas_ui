@@ -14,7 +14,12 @@
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-
+  <!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.2/css/mdb.min.css" rel="stylesheet">
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
 
@@ -337,64 +342,157 @@
           </ul>
 
         </nav>
-        <!-- End of Topbar -->
 
-        <!-- Begin Page Content -->
-        <div class="container-fluid"><br>
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="card mb-2">
-                <div class="card-header" style="background: #fff;text-align: center;">
-                  Tax Calculator
-                </div>
-                <div class="card-body">
-                  <form>
-                    <div class="form-group">
-                      <label>Gross Income</label>
-                      <input type="number" class="form-control" id="income" placeholder="Gross Income">
-                    </div>
-                    <div class="form-group">
-                      <label>Personal Contribution</label>
-                      <input type="number" class="form-control" id="personalContribution" placeholder="Personal Contribution">
-                    </div>
-                    <div class="form-group">
-                      <label>NHF Contribution</label>
-                      <input type="number" class="form-control" id="nhfContribution" placeholder="NHF Contribution">
-                    </div>
-                    <div class="form-group">
-                      <label>NHIS Contribution</label>
-                      <input type="number" class="form-control" id="nhisContribution" placeholder="NHIS Contribution">
-                    </div>
-                    <div class="form-group">
-                      <label>Life Assurance Payments</label>
-                      <input type="number" class="form-control" id="assurance" placeholder="Life Assurance Payments">
-                    </div>
-                    <div class="form-group">
-                      <input type="submit" href="#" class="btn btn-success" value="Calculate">
-                      <input type="submit" href="#" class="btn btn-success" value="Reset">
-                    </div>
-                  </form><br><br>
-                </div><br><br><br>
+        <div class="container-fluid">
 
-              </div>
-            </div>
-            
-            <div class="col-lg-6">
-              <div class="card mb-4">
-                <div class="card-header" style="background: #fff; text-align: center;">
-                  Tax Calculator Results
-                </div><br><br><br><br>
-                <div class="card-body">
-                  Gross Income: <br>
-                  Total Tax Relief Items:  <br>
-                  Consolidated Relief Allowance: <br>
-                  Total Non-Taxable Income:  <br>
-                  Total Taxable Income:  <br>
-                  Total Tax: <br>
-                </div><br><br><br><br><br>
-              </div>
-            </div>
+          <!-- Page Heading -->
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">General Payments</h1> 
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">general payment</a></li>
+                
+              </ol>
+            </nav>
           </div>
+          <!-- Content Row -->
+          <div class="row">
+
+          </div>
+
+          <!-- Content Row -->
+
+          <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <div class="row">
+                <div class="col-md-8">
+                  <h6 class="m-0 font-weight-bold text-primary">General Payments</h6>
+                </div>
+              </div>
+              
+            </div>
+            <div class="card-body">
+               <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="payment-tab" data-toggle="tab" href="#payment" role="tab" aria-controls="payment" aria-selected="true">Payments</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="confirm-tab" data-toggle="tab" href="#confirm" role="tab" aria-controls="confirm" aria-selected="false">Confirm</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="pay-tab" data-toggle="tab" href="#pay" role="tab" aria-controls="pay" aria-selected="false">Pay</a>
+                  </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane fade show active" id="payment" role="tabpanel" aria-labelledby="payment-tab"><br>
+
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40%</div>
+                    </div><br>
+
+                    <div class="form-group row">
+                      <div class="col-sm-3 mb-2 mb-sm-0">
+                        <label>Select MDA</label>
+                        <select class="form-control" id="mda">
+                          <option>Hospital Management Board</option>
+                        </select>
+                      </div>
+                      <div class="col-sm-3 mb-2 mb-sm-0">
+                        <label>Station</label>
+                        <select class="form-control" id="station">
+                          <option>General Hospital Aliade</option>
+                          <option>General Hospital Buruku</option>
+                          <option>General Hospital Gboko</option>
+                          <option>General Hospital North Bank</option>
+                        </select>
+                      </div>
+                      <div class="col-sm-3 mb-2 mb-sm-0">
+                        <label>Product</label>
+                        <select class="form-control" id="product">
+                          <option>DRF</option>
+                          <option>X-Ray</option>
+                          <option>HIV-Tests</option>
+                          <option>Pregnancy Tests</option>
+                        </select>
+                      </div>
+                      <div class="col-sm-3 mb-2 mb-sm-0">
+                        <label>Amount</label>
+                        <input type="text" class="form-control" id="amount">
+                      </div>
+                    </div>
+                    <div class="col-sm-4 mb-2 mb-sm-0">
+                        <label>Period Covered</label>
+                        <input type="date" class="form-control" id="period">
+                    </div>
+                    <a href="#" class="btn btn-outline-primary" >Add Another Payment</a>
+                    <h5 style="float: right !important;">Total: 0.00 </h5>
+                  
+                  </div>
+
+                  <div class="tab-pane fade" id="confirm" role="tabpanel" aria-labelledby="confirm-tab">
+                    <br>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                    </div><br>
+                    <div class="card mb-4">
+                      <div class="card-header">
+                        Payment Summary
+                      </div>
+                      <div class="card-body">
+                        Company Name:  <br>
+                        Transaction Ref: <br>
+                        Amount:  <br>
+                        Convenience Fee: <br>
+                        Total Payable: <br>
+                        Payment Description:  <br>
+                        Payment Type: <br>
+                        Period Covered: <br>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="pay" role="tabpanel" aria-labelledby="pay-tab">
+                    <br>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+                    </div><br>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="card mb-4">
+                          <div class="card-header">
+                            Payment Summary
+                          </div>
+                          <div class="card-body">
+                            Company Name:  <br>
+                            Transaction Ref: <br>
+                            Amount:  <br>
+                            Convenience Fee: <br>
+                            Total Payable: <br>
+                            Payment Description:  <br>
+                            Payment Type: <br>
+                            Period Covered: <br>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card mb-4">
+                          <div class="card-header">
+                            Choose Payment Method
+                          </div>
+                          <div class="card-body">
+                            Pay with Card <br><br>
+                            <a href=""><i class="fas fa-money-check fa-3x"></i></a><br>
+                            <a href=""><i class="fab fa-cc-mastercard fa-3x"></i></a><br>
+                            <a href=""><i class="fab fa-cc-visa fa-3x"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>            
+              </div>
+          </div>
+
 
           <!-- Content Row -->
           <div class="row">
@@ -457,7 +555,6 @@
 
   <!-- Custom scripts for all pages-->
   <script src="js/sb-admin-2.min.js"></script>
-
 </body>
 
 </html>

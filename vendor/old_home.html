@@ -24,7 +24,8 @@
 
   <!-- Page Wrapper -->
   <div id="wrapper">
-  <!-- Sidebar -->
+
+    <!-- Sidebar -->
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
@@ -51,27 +52,14 @@
         </a>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="employee.html">Employee</h6>
-            <a class="collapse-item" href="employee_assessment.html">Payee Assessment</a>
+            <a class="collapse-item" href="employee.html">Employees</h6>
             <a class="collapse-item" href="requests.html">Request</a>
             <a class="collapse-item" href="payee_agent.html">Payee Agents</a>
             <a class="collapse-item" href="payee_agent_request.html">Payee Agents Requests</a>
           </div>
         </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePayments" aria-expanded="true" aria-controls="collapsePayments">
-          <i class="fas fa-fw fa-wallet"></i>
-          <span>Payments</span>
-        </a>
-        <div id="collapsePayments" class="collapse" aria-labelledby="headingPayments" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="batch_payment.html">Batch Payments</h6>
-            <a class="collapse-item" href="general_payment.html">General Payments</h6>
-            <a class="collapse-item" href="payment_history.html">Payment History</a>
-          </div>
-        </div>
-      </li>
+
       <!-- Nav Item - Utilities Collapse Menu -->
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
@@ -86,6 +74,20 @@
           </div>
         </div>
       </li>
+
+       <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePayments" aria-expanded="true" aria-controls="collapsePayments">
+          <i class="fas fa-fw fa-wallet"></i>
+          <span>Payments</span>
+        </a>
+        <div id="collapsePayments" class="collapse" aria-labelledby="headingPayments" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <a class="collapse-item" href="payment.html">Make Payments</h6>
+            <a class="collapse-item" href="payment_history.html">Payment History</a>
+          </div>
+        </div>
+      </li>
+
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTcc" aria-expanded="true" aria-controls="collapseTcc">
           <i class="fas fa-fw fa-question"></i>
@@ -148,7 +150,6 @@
 
     </ul>
     <!-- End of Sidebar -->
-
 
     <!-- Content Wrapper -->
     <div id="content-wrapper" class="d-flex flex-column">
@@ -340,57 +341,131 @@
         <!-- End of Topbar -->
 
         <!-- Begin Page Content -->
-        <div class="container-fluid"><br>
+        <div class="container-fluid">
+
+          <!-- Page Heading -->
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+          </div>
+
+          <!-- Content Row -->
           <div class="row">
-            <div class="col-lg-6">
-              <div class="card mb-2">
-                <div class="card-header" style="background: #fff;text-align: center;">
-                  Tax Calculator
-                </div>
+
+            <!-- Earnings (Monthly) Card Example -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-primary shadow h-100 py-2">
                 <div class="card-body">
-                  <form>
-                    <div class="form-group">
-                      <label>Gross Income</label>
-                      <input type="number" class="form-control" id="income" placeholder="Gross Income">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Employees</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800">40</div>
                     </div>
-                    <div class="form-group">
-                      <label>Personal Contribution</label>
-                      <input type="number" class="form-control" id="personalContribution" placeholder="Personal Contribution">
+                    <div class="col-auto">
+                      <i class="fas fa-users fa-2x text-gray-300"></i>
                     </div>
-                    <div class="form-group">
-                      <label>NHF Contribution</label>
-                      <input type="number" class="form-control" id="nhfContribution" placeholder="NHF Contribution">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Earnings (Monthly) Card Example -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-success shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Requests</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800">215,000</div>
                     </div>
-                    <div class="form-group">
-                      <label>NHIS Contribution</label>
-                      <input type="number" class="form-control" id="nhisContribution" placeholder="NHIS Contribution">
+                    <div class="col-auto">
+                      <i class="fas fa-book fa-2x text-gray-300"></i>
                     </div>
-                    <div class="form-group">
-                      <label>Life Assurance Payments</label>
-                      <input type="number" class="form-control" id="assurance" placeholder="Life Assurance Payments">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-info shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Activities</div>
+                      <div class="row no-gutters align-items-center">
+                        <div class="col-auto">
+                          <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50</div>
+                        </div>
+                        <div class="col">
+                          <div class="progress progress-sm mr-2">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="form-group">
-                      <input type="submit" href="#" class="btn btn-success" value="Calculate">
-                      <input type="submit" href="#" class="btn btn-success" value="Reset">
+                    <div class="col-auto">
+                      <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
                     </div>
-                  </form><br><br>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pending Requests Card Example -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-warning shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Direct Messages</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fas fa-comments fa-2x text-gray-300"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><br>
+
+          <!-- Content Row -->
+
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="card mb-2">
+                <div class="card-header" style="background: green; color: #fff; text-align: center;">
+                  Upload Employees...
+                </div><br><br><br><br>
+                <div class="card-body">
+                  Your employees are a crucual part of your BIRETAS account. Simply upload their details on BIRETAS and they will be notified that you have created their account. They will proceed from there to obtain their own BIRETASTINs. Simple, isn't it?<br><br>
+                  <a href="#" class="btn btn-success ">Let's Go</a>
                 </div><br><br><br>
 
               </div>
             </div>
-            
-            <div class="col-lg-6">
+            <div class="col-lg-4">
               <div class="card mb-4">
-                <div class="card-header" style="background: #fff; text-align: center;">
-                  Tax Calculator Results
+                <div class="card-header" style="background: green; color: #fff; text-align: center;">
+                  Upload Annual Returns...
                 </div><br><br><br><br>
                 <div class="card-body">
-                  Gross Income: <br>
-                  Total Tax Relief Items:  <br>
-                  Consolidated Relief Allowance: <br>
-                  Total Non-Taxable Income:  <br>
-                  Total Taxable Income:  <br>
-                  Total Tax: <br>
+                  Annual Returns Details are important if you want to apply for Tax Clearance Certificates. Your Annual Returns uploads should be uploaded with details of Tax payments in the preceding year, in a specified format.
+                  <br><br>
+                  <a href="#" class="btn btn-success btn small">Annual Returns</a>
+                </div><br><br><br><br>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card mb-4">
+                <div class="card-header" style="background: green; color: #fff; text-align: center;">
+                  Make Payments...
+                </div><br><br><br><br>
+                <div class="card-body">
+                  So you want to pay your tax, or pay for other collections of Rivers State? Welcome to your own iRS. Feel free to make payments using any of the payment options available. It's simple.
+                  <br><br>
+                  <a href="#" class="btn btn-success btn small">Make Payments</a>
                 </div><br><br><br><br><br>
               </div>
             </div>
@@ -457,6 +532,8 @@
 
   <!-- Custom scripts for all pages-->
   <script src="js/sb-admin-2.min.js"></script>
+
+ 
 
 </body>
 

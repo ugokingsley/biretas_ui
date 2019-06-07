@@ -33,6 +33,8 @@
     <!-- Sidebar -->
     <!-- Sidebar -->
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+  <!-- Sidebar -->
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
@@ -58,14 +60,27 @@
         </a>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="employee.html">Employees</h6>
+            <a class="collapse-item" href="employee.html">Employee</h6>
+            <a class="collapse-item" href="employee_assessment.html">Payee Assessment</a>
             <a class="collapse-item" href="requests.html">Request</a>
             <a class="collapse-item" href="payee_agent.html">Payee Agents</a>
             <a class="collapse-item" href="payee_agent_request.html">Payee Agents Requests</a>
           </div>
         </div>
       </li>
-
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePayments" aria-expanded="true" aria-controls="collapsePayments">
+          <i class="fas fa-fw fa-wallet"></i>
+          <span>Payments</span>
+        </a>
+        <div id="collapsePayments" class="collapse" aria-labelledby="headingPayments" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <a class="collapse-item" href="batch_payment.html">Batch Payments</h6>
+            <a class="collapse-item" href="general_payment.html">General Payments</h6>
+            <a class="collapse-item" href="payment_history.html">Payment History</a>
+          </div>
+        </div>
+      </li>
       <!-- Nav Item - Utilities Collapse Menu -->
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
@@ -80,20 +95,6 @@
           </div>
         </div>
       </li>
-
-       <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePayments" aria-expanded="true" aria-controls="collapsePayments">
-          <i class="fas fa-fw fa-wallet"></i>
-          <span>Payments</span>
-        </a>
-        <div id="collapsePayments" class="collapse" aria-labelledby="headingPayments" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="payment.html">Make Payments</h6>
-            <a class="collapse-item" href="payment_history.html">Payment History</a>
-          </div>
-        </div>
-      </li>
-
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTcc" aria-expanded="true" aria-controls="collapseTcc">
           <i class="fas fa-fw fa-question"></i>
@@ -156,7 +157,7 @@
 
     </ul>
     <!-- End of Sidebar -->
-    <!-- End of Sidebar -->
+
 
     <!-- Content Wrapper -->
     <div id="content-wrapper" class="d-flex flex-column">
